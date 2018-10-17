@@ -1,0 +1,49 @@
+.body {
+
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  grid-template-areas: "panel player";
+}
+
+.videoPanel {
+  overflow-y: scroll;
+  max-height: 90vh;
+  grid-area: panel;
+}
+
+.videoPlayer {
+  grid-area: player;
+  margin: 0 10px 0 0;
+}
+
+.videoCell {
+  font-family: Courier New;
+  border: 2px solid #e3e3e3;
+  border-radius: 20px;
+  margin: 0px 8px 8px 8px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "thumbnail title"
+                       "thumbnail description";
+}
+
+.image {
+  grid-area: thumbnail; 
+  margin: auto;
+}
+
+.title {
+  grid-area: title;
+  font-size: 1.3em;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  grid-area: description;
+  text-align: left;
+}

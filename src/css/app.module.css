@@ -1,0 +1,17 @@
+.app {
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+  grid-template-areas: "head"
+                       "body";
+}
+
+.header {
+  grid-area: head 
+}
+
+.body {
+  grid-area: body
+}
+
+
+

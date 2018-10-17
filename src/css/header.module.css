@@ -1,0 +1,10 @@
+.header {
+  font-family: Courier New;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+hr {
+  color: yellow;
+  margin: 5px 0 8px 0;
+}
